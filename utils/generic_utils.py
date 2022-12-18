@@ -12,7 +12,7 @@ import importlib
 import numpy as np
 from collections import OrderedDict
 from torch.autograd import Variable
-from utils.text import text_to_sequence
+from .text import text_to_sequence
 
 
 class AttrDict(dict):
