@@ -246,7 +246,7 @@ def set_init_dict(model_dict, checkpoint, c):
 
 def setup_model(num_chars, c):
     print(" > Using model: {}".format(c.model))
-    MyModel = importlib.import_module('models.' + c.model.lower())
+    MyModel = importlib.import_module('KibTTS.models.' + c.model.lower())
     MyModel = getattr(MyModel, c.model)
     if c.model.lower() == "tacotron":
         model = MyModel(
